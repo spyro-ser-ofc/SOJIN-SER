@@ -3,7 +3,7 @@
 
 
 <div align="center">
-<img src="https://i.ibb.co/2y1Qskx/246776.jpg.jpg" alt="Aju"width="2000" />
+<a href="https://github.com/aju001"><img src="https://i.ibb.co/2y1Qskx/246776.jpg.jpg" alt="Aju"width="2000" />
  
 ## AJUSER
 
