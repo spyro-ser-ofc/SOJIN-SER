@@ -502,7 +502,7 @@ const ftrol = {
                           }
                         }
                       }
-        const freply = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { "contactMessage": { "displayName": `${pushname}`, "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:XL;${pushname},;;;\nFN:${pushname},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:mADE With Denis\nEND:VCARD`, "jpegThumbnail":fs.readFileSync('./media/Nakano.jpg')
+        const freply = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { "contactMessage": { "displayName": `${pushname}`, "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:XL;${pushname},;;;\nFN:${pushname},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:mADE With Aju\nEND:VCARD`, "jpegThumbnail":fs.readFileSync('./media/Nakano.jpg')
         }}}
        const math = (teks) => {
            return Math.floor(teks)
@@ -540,7 +540,7 @@ const ftrol = {
 			for (let anjh of imagi){
 				if (budy === anjh){
 					result = fs.readFileSync(`./media/image/${anjh}.jpg`)
-					bosco.sendMessage(from, result, image, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})}, message: { orderMessage: { itemCount: 500, status: 200, thumbnail: fs.readFileSync('./ds.jpg'), surface: 200, message: `${fake}`, orderTitle: `MADE BY PEPE`, sellerJid: '0@s.whatsapp.net'}}}})
+					bosco.sendMessage(from, result, image, {quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})}, message: { orderMessage: { itemCount: 500, status: 200, thumbnail: fs.readFileSync('./ds.jpg'), surface: 200, message: `${fake}`, orderTitle: `MADE BY AJUSER`, sellerJid: '0@s.whatsapp.net'}}}})
 					}
 			}
 			for (let anje of videonye){
@@ -2354,7 +2354,7 @@ teks = `
 `
     menubutton = [{buttonId:`${prefix}credits`,buttonText:{displayText:'CREDITS'},type:1}
 ]
- menumessage = { contentText: `${teks}`, footerText: `Sᴜʙsᴄʀɪʙᴇ Yᴛ ᴀᴊᴜ sᴇʀ`, buttons: menubutton, headerType: 6, locationMessage: bosco2.message.locationMessage}
+ menumessage = { contentText: `${teks}`, footerText: `Sᴜʙsᴄʀɪʙᴇ Yᴛ ᴀᴊᴜx`, buttons: menubutton, headerType: 6, locationMessage: bosco2.message.locationMessage}
  bosco.sendMessage(from, menumessage, MessageType.buttonsMessage)
              break  
       case 'buttons5':
@@ -2459,7 +2459,7 @@ teks = `
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
 		      buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `next`},type:1},{buttonId:`${prefix}owner`,buttonText:{displayText:'owner'},type:1}]
               imageMsg = ( await bosco.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
-              buttonsMessage = {footerText:'© 𝒎𝒂𝒅𝒆 𝒃𝒚 𝐀𝐉𝐔𝐒𝐄𝐑', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'© 𝐌𝐚𝐝𝐞 𝐁𝐲 𝐀𝐉𝐔𝐒𝐄𝐑', imageMessage: imageMsg,
               contentText:`_Click Next to go to the next picture_`,buttons,headerType:4}
               prep = await bosco.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
               bosco.relayWAMessage(prep)
@@ -2671,7 +2671,7 @@ case 'attp':
               exec(`ffmpeg -i ${mediat} -vf "scale=512:512:force_original_aspect_ratio=increase,fps=15, crop=512:512" ${ron}`, (err) => {
               fs.unlinkSync(mediat)
               if (err) return reply(`${err}`)
-              exec(`webpmux -set exif ${addMetadata('Denis')} ${ron} -o ${ron}`, async (error) => {
+              exec(`webpmux -set exif ${addMetadata('Aju')} ${ron} -o ${ron}`, async (error) => {
               if (error) return reply(`${error}`)
               bosco.sendMessage(from, fs.readFileSync(ron), sticker, {quoted:mek})
               fs.unlinkSync(ron)
@@ -2684,7 +2684,7 @@ case 'attp':
               exec(`ffmpeg -i ${mediat} -vf "scale=512:512:force_original_aspect_ratio=increase,fps=15, crop=512:512" ${ron}`, (err) => {
               fs.unlinkSync(mediat)
               if (err) return reply(`${err}`)
-              exec(`webpmux -set exif ${addMetadata('Denis')} ${ron} -o ${ron}`, async (error) => {
+              exec(`webpmux -set exif ${addMetadata('Aju')} ${ron} -o ${ron}`, async (error) => {
               if (error) return reply(`${error}`)
               bosco.sendMessage(from, fs.readFileSync(ron), sticker, {quoted:mek})
               fs.unlinkSync(ron)
@@ -3095,7 +3095,7 @@ case 'emoji':
                  case 'sc':
                  case 'git':
 		case 'sourcecode':
-		function _0x1f50(_0x209a2e,_0x5079f5){var _0x1133bc=_0x44d2();return _0x1f50=function(_0x55ee06,_0x26680f){_0x55ee06=_0x55ee06-0x152;var _0x44d270=_0x1133bc[_0x55ee06];return _0x44d270;},_0x1f50(_0x209a2e,_0x5079f5);}var _0x2c057a=_0x1f50;function _0x44d2(){var _0x387e95=['hehe','5000bVYgeV','apply','4153655twAYRV','▢\x20Sᴜʙsᴄʀɪʙᴇ\x20Yᴛ\x20ᴀᴊᴜ\x20Sᴇʀ\x20▢','24CnBiap','split','toString','130QHbvJQ','search','ephemeralMessage','(((.+)+)+)+$','constructor','buttonsMessage','74744xOoftI','message','55002dqgfBH','prepareMessage','1847619gLtKAp','26345196LKPCHx','locationMessage','315jrFkZq','126mIOGQg','200427wIpjqE','10ujPZBD'];_0x44d2=function(){return _0x387e95;};return _0x44d2();}(function(_0x4617b3,_0xd7a238){var _0xc75b39=_0x1f50,_0x560992=_0x4617b3();while(!![]){try{var _0x1eea72=-parseInt(_0xc75b39(0x15b))/0x1*(parseInt(_0xc75b39(0x15f))/0x2)+-parseInt(_0xc75b39(0x15c))/0x3*(parseInt(_0xc75b39(0x163))/0x4)+parseInt(_0xc75b39(0x166))/0x5*(-parseInt(_0xc75b39(0x155))/0x6)+-parseInt(_0xc75b39(0x15a))/0x7*(parseInt(_0xc75b39(0x153))/0x8)+-parseInt(_0xc75b39(0x157))/0x9+-parseInt(_0xc75b39(0x15d))/0xa*(parseInt(_0xc75b39(0x161))/0xb)+parseInt(_0xc75b39(0x158))/0xc;if(_0x1eea72===_0xd7a238)break;else _0x560992['push'](_0x560992['shift']());}catch(_0x38e5cc){_0x560992['push'](_0x560992['shift']());}}}(_0x44d2,0x3a152));var _0x26680f=function(){var _0x1948f5=!![];return function(_0x1cdee3,_0x33a6ab){var _0x5361d5=_0x1948f5?function(){var _0x7c79c6=_0x1f50;if(_0x33a6ab){var _0x447793=_0x33a6ab[_0x7c79c6(0x160)](_0x1cdee3,arguments);return _0x33a6ab=null,_0x447793;}}:function(){};return _0x1948f5=![],_0x5361d5;};}(),_0x55ee06=_0x26680f(this,function(){var _0x19c139=_0x1f50;return _0x55ee06[_0x19c139(0x165)]()[_0x19c139(0x167)](_0x19c139(0x169))[_0x19c139(0x165)]()[_0x19c139(0x16a)](_0x55ee06)[_0x19c139(0x167)](_0x19c139(0x169));});_0x55ee06(),sc1=await bosco[_0x2c057a(0x156)](from,dfrply,location,{'thumbnail':dfrply}),sc2=sc1[_0x2c057a(0x154)][_0x2c057a(0x168)]?sc1['message']['ephemeralMessage']:sc1,sc='\x20Hɪ\x20Bʀᴏ\x20@'+sender[_0x2c057a(0x164)]('@')[0x0]+'Bᴏᴛ\x20Sᴄʀɪᴘᴛ\x20Wɪʟʟ\x20Bᴇ\x20Aᴠᴀɪʟᴀʙʟᴇ\x20Oɴ\x20👇\x0a\x0a\x22https://youtube.com/channel/UCk4uZXPnYwPSo2YlQECp1RA\x22\x0a\x0a',scbutton=[{'buttonId':prefix+'alive','buttonText':{'displayText':'🙌'},'type':0x1}],scmessage={'contentText':''+sc,'footerText':_0x2c057a(0x162),'buttons':scbutton,'headerType':0x6,'locationMessage':sc2['message'][_0x2c057a(0x159)]},bosco['sendMessage'](from,scmessage,MessageType[_0x2c057a(0x152)],{'caption':_0x2c057a(0x15e),'contextInfo':{'mentionedJid':[sender]}});
+		function _0x1f50(_0x209a2e,_0x5079f5){var _0x1133bc=_0x44d2();return _0x1f50=function(_0x55ee06,_0x26680f){_0x55ee06=_0x55ee06-0x152;var _0x44d270=_0x1133bc[_0x55ee06];return _0x44d270;},_0x1f50(_0x209a2e,_0x5079f5);}var _0x2c057a=_0x1f50;function _0x44d2(){var _0x387e95=['hehe','5000bVYgeV','apply','4153655twAYRV','▢\x20Sᴜʙsᴄʀɪʙᴇ\x20Yᴛ\x20ᴀᴊᴜx\x20▢','24CnBiap','split','toString','130QHbvJQ','search','ephemeralMessage','(((.+)+)+)+$','constructor','buttonsMessage','74744xOoftI','message','55002dqgfBH','prepareMessage','1847619gLtKAp','26345196LKPCHx','locationMessage','315jrFkZq','126mIOGQg','200427wIpjqE','10ujPZBD'];_0x44d2=function(){return _0x387e95;};return _0x44d2();}(function(_0x4617b3,_0xd7a238){var _0xc75b39=_0x1f50,_0x560992=_0x4617b3();while(!![]){try{var _0x1eea72=-parseInt(_0xc75b39(0x15b))/0x1*(parseInt(_0xc75b39(0x15f))/0x2)+-parseInt(_0xc75b39(0x15c))/0x3*(parseInt(_0xc75b39(0x163))/0x4)+parseInt(_0xc75b39(0x166))/0x5*(-parseInt(_0xc75b39(0x155))/0x6)+-parseInt(_0xc75b39(0x15a))/0x7*(parseInt(_0xc75b39(0x153))/0x8)+-parseInt(_0xc75b39(0x157))/0x9+-parseInt(_0xc75b39(0x15d))/0xa*(parseInt(_0xc75b39(0x161))/0xb)+parseInt(_0xc75b39(0x158))/0xc;if(_0x1eea72===_0xd7a238)break;else _0x560992['push'](_0x560992['shift']());}catch(_0x38e5cc){_0x560992['push'](_0x560992['shift']());}}}(_0x44d2,0x3a152));var _0x26680f=function(){var _0x1948f5=!![];return function(_0x1cdee3,_0x33a6ab){var _0x5361d5=_0x1948f5?function(){var _0x7c79c6=_0x1f50;if(_0x33a6ab){var _0x447793=_0x33a6ab[_0x7c79c6(0x160)](_0x1cdee3,arguments);return _0x33a6ab=null,_0x447793;}}:function(){};return _0x1948f5=![],_0x5361d5;};}(),_0x55ee06=_0x26680f(this,function(){var _0x19c139=_0x1f50;return _0x55ee06[_0x19c139(0x165)]()[_0x19c139(0x167)](_0x19c139(0x169))[_0x19c139(0x165)]()[_0x19c139(0x16a)](_0x55ee06)[_0x19c139(0x167)](_0x19c139(0x169));});_0x55ee06(),sc1=await bosco[_0x2c057a(0x156)](from,dfrply,location,{'thumbnail':dfrply}),sc2=sc1[_0x2c057a(0x154)][_0x2c057a(0x168)]?sc1['message']['ephemeralMessage']:sc1,sc='\x20Hɪ\x20Bʀᴏ\x20@'+sender[_0x2c057a(0x164)]('@')[0x0]+'Bᴏᴛ\x20Sᴄʀɪᴘᴛ\x20Wɪʟʟ\x20Bᴇ\x20Aᴠᴀɪʟᴀʙʟᴇ\x20Oɴ\x20👇\x0a\x0a\x22https://youtube.com/channel/UCk4uZXPnYwPSo2YlQECp1RA\x22\x0a\x0a',scbutton=[{'buttonId':prefix+'alive','buttonText':{'displayText':'🙌'},'type':0x1}],scmessage={'contentText':''+sc,'footerText':_0x2c057a(0x162),'buttons':scbutton,'headerType':0x6,'locationMessage':sc2['message'][_0x2c057a(0x159)]},bosco['sendMessage'](from,scmessage,MessageType[_0x2c057a(0x152)],{'caption':_0x2c057a(0x15e),'contextInfo':{'mentionedJid':[sender]}});
 		break
         case 'isbaileys': 
 case 'bail': 
