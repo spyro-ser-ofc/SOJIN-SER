@@ -3,9 +3,10 @@
 
 
 <div align="center">
-<img src="life.jpg" alt="Pepe" width="170" />
+<img src="https://i.ibb.co/64Q2Qdj/68747470733a2f2f74656c656772612e70682f66696c652f3938663963336437366364343937356465396462342e6a7067.jpg" alt="Aju"
+     
 
-# AJUSER
+
 
 > Ajuser Bot is a multipurpose WhatsApp bot using Adiwajshing-Baileys library!
 >
