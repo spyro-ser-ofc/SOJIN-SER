@@ -913,7 +913,7 @@ const ftrol = {
             switch(command){
            
             case 'owner':
-            ini_ownerNumber = [`${setting.owner}@s.whatsapp.net`,`917736622139@s.whatsapp.net`,`19014016638@s.whatsapp.net`,`${setting.owner}@s.whatsapp.net`,`${setting.owner}@s.whatsapp.net`]
+            ini_ownerNumber = [`${setting.owner}@s.whatsapp.net`,`917736622139@s.whatsapp.net`,`19014016638@s.whatsapp.net`,`${setting.owner}@s.whatsapp.net`]
             let ini_list = []
 		    for (let i of ini_ownerNumber) {
 			const vname_ = bosco.contacts[i] != undefined ? bosco.contacts[i].vname || bosco.contacts[i].notify : undefined
