@@ -29,9 +29,9 @@
 
 
 <p align="center">
-  <a href="https://github.com/aju001/Bosco#requirements">Requirements</a> •
-  <a href="https://github.com/aju001/Bosco#simple method">Installation</a> •
-  <a href="https://github.com/aju001/Bosco#thanks-to">Thanks to</a>
+  <a href="https://github.com/aju001/AJUX#requirements">Requirements</a> •
+  <a href="https://github.com/aju001/AJUX#simple method">Installation</a> •
+  <a href="https://github.com/aju001/AJUX#thanks-to">Thanks to AJU</a> 
 </p>
 </div>
 
@@ -80,7 +80,6 @@ you can contact us
 ```
 
 # Thanks to
-* Denis ser
 
 * [`Aju`](https://github.com/aju001)
 * [`Baileys`](https://github.com/adiwajshing/Baileys)
