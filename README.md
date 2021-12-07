@@ -5,7 +5,7 @@
 <div align="center">
 <a href="https://github.com/aju001"><img src="https://i.ibb.co/2y1Qskx/246776.jpg.jpg" alt="Aju"width="2000" />
  
-## AJUSER
+## ⚡AJUSER⚡
 
 
 > Ajuser Bot is a multipurpose WhatsApp bot using Adiwajshing-Baileys library!
