@@ -2735,7 +2735,7 @@ case 'emoji':
 					vien.push(`${nm}`)
 					fs.writeFileSync(`./media/vn/${nm}.mp3`, delb)
 					fs.writeFileSync('./database/vien.json', JSON.stringify(vien))
-					bosco.sendMessage(from, `*Bgm Added*`, MessageType.text, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: 'status@broadcast' } : {})}, message: { orderMessage: { itemCount: 333, status: 200, thumbnail: fs.readFileSync('./ds.jpg'), surface: 200, message: `${nm}`, orderTitle: 'hehe', sellerJid: '0@s.whatsapp.net'}}},duration: '999899.0', ptt: true, contextInfo: { forwardingScore: 508, isForwarded: true}})
+					bosco.sendMessage(from, `*Bgm Added*`, MessageType.text, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: 'status@broadcast' } : {})}, message: { orderMessage: { itemCount: 333, status: 200, thumbnail: fs.readFileSync('./ds.jpg'), surface: 200, message: `${nm}`, orderTitle: 'hehe', sellerJid: '0@s.whatsapp.net'}}},mimetype: 'audio/mp4', duration: '999899.0', ptt: true, contextInfo: { forwardingScore: 508, isForwarded: true}})
 					break
 	 case 'delvn':
 					try {
