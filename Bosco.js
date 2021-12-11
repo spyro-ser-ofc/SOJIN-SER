@@ -933,7 +933,7 @@ const ftrol = {
         groups = bosco.chats.array.filter(v => v.jid.endsWith('g.us'))
         privat = bosco.chats.array.filter(v => v.jid.endsWith('s.whatsapp.net'))
         totalChat = await bosco.chats.all()
-        bosco1 = await bosco.prepareMessage(from, denis, location, {thumbnail: bosco})
+        bosco1 = await bosco.prepareMessage(from, denis, location, {thumbnail: denis})
         bosco2 = bosco1.message["ephemeralMessage"] ? bosco1.message.ephemeralMessage : bosco1
         timestampe = speed();
         latensie = speed() - timestampe
