@@ -64,7 +64,7 @@ const { isAfk, cekafk, addafk } = require('./lib/offline')
 const a = '▢'
 
 hit_today = []
-banChats = true
+banChats = false
 offline = false
 
 let fakeimage = fs.readFileSync("./media/wpmobile.jpg")
@@ -2653,7 +2653,7 @@ bosco.sendMessage(from, `${args.join(' ')}`, MessageType.text, {contextInfo: { f
 //------------------< Sticker Maker >-------------------
 
 case 'attp':
-              if (args.length == 0) return reply(`Example: ${prefix + command} bosco`)
+              if (args.length == 0) return reply(`Example: ${prefix + command} Ajuser`)
               buffer = await getBuffer(`https://api.xteam.xyz/attp?file&text=${encodeURI(q)}`)
               bosco.sendMessage(from, buffer, sticker, { quoted: mek })
               break
@@ -2735,7 +2735,7 @@ case 'emoji':
 					vien.push(`${nm}`)
 					fs.writeFileSync(`./media/vn/${nm}.mp3`, delb)
 					fs.writeFileSync('./database/vien.json', JSON.stringify(vien))
-					bosco.sendMessage(from, `*Bgm Added*`, MessageType.text, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: 'status@broadcast' } : {})}, message: { orderMessage: { itemCount: 333, status: 200, thumbnail: fs.readFileSync('./ds.jpg'), surface: 200, message: `${nm}`, orderTitle: 'hehe', sellerJid: '0@s.whatsapp.net'}}},mimetype: 'audio/mp4', duration: '999899.0', ptt: true, contextInfo: { forwardingScore: 508, isForwarded: true}})
+					bosco.sendMessage(from, `*Bgm Added*`, MessageType.text, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: 'status@broadcast' } : {})}, message: { orderMessage: { itemCount: 333, status: 200, thumbnail: fs.readFileSync('./ds.jpg'), surface: 200, message: `${nm}`, orderTitle: 'Aju', sellerJid: '0@s.whatsapp.net'}}}, contextInfo: { forwardingScore: 508, isForwarded: true}})
 					break
 	 case 'delvn':
 					try {
