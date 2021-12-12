@@ -54,8 +54,8 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 # Requirements
 * [Node.js](https://nodejs.org/en/)
 * [Git](https://git-scm.com/downloads)
-* [FFmpeg](https://github.com/BtbN/FFmpeg-Builds/releases) (for sticker command)
-* [Libwebp](https://developers.google.com/speed/webp/download) (for sticker wm)
+* [FFmpeg](https://github.com/BtbN/FFmpeg-Builds/releases)
+* [Libwebp](https://developers.google.com/speed/webp/download)
 * Any text editor
 
 
