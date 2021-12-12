@@ -1401,6 +1401,19 @@ break
               reply('*Byee all..:(* 🚶')
               }, 0)
               break
+	case 'tagall':
+					if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
+					if (!isGroup) return reply('this feature is only for groups')
+					if (!isGroupAdmins) return reply('only admin can use this feature')
+					members_id = []
+					teks = (args.length > 1) ? body.slice(8).trim() : ''
+					teks += '\n\n'
+					for (let mem of groupMembers) {
+						teks += `🦋 @${mem.jid.split('@')[0]}\n`
+						members_id.push(mem.jid)
+					}
+					mentions(teks, members_id, true)
+					break		    
        case 'online':
        case 'listonline':
        case 'here':                
