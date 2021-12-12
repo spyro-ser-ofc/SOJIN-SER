@@ -1402,7 +1402,6 @@ break
               }, 0)
               break
 	case 'tagall':
-					if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 					if (!isGroup) return reply('this feature is only for groups')
 					if (!isGroupAdmins) return reply('only admin can use this feature')
 					members_id = []
