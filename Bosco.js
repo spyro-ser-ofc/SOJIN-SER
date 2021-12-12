@@ -1392,7 +1392,7 @@ break
              reply('*Reply chat bot!*')
 }
              break
-      case 'leave':
+      case 'leaveme':
               if (!isGroup) return reply(mess.only.group)
               setTimeout( () => {
               bosco.groupLeave(from) 
