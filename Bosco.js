@@ -1980,7 +1980,7 @@ break
               fs.unlinkSync(media)
               if (err) return reply('*Failed, when converting sticker to image*')
               buffer = fs.readFileSync(ran)
-              bosco.sendMessage(from, buffer, image, {quoted: mek, thumbnail:denis, caption: 'BY AJUSER'})
+              bosco.sendMessage(from, buffer, image, {quoted: mek, thumbnail:denis, caption: '𝘽𝙔 𝘼𝙅𝙐𝙎𝙀𝙍 𝘽𝙊𝙏'})
               fs.unlinkSync(ran)
 })
               break
