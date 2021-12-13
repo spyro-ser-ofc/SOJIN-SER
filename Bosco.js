@@ -1403,7 +1403,7 @@ break
               break
 	case 'tagall':
 					if (!isGroup) return reply('this feature is only for groups')
-					if (!isGroup) return reply('only admin can use this feature')
+					if (!isGroupAdmins) return reply('only admin can use this feature')
 					members_id = []
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += '\n\n'
