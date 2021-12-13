@@ -2465,18 +2465,28 @@ teks = `
               prep = await bosco.prepareMessageFromContent(from,{buttonsMessage},{})
               bosco.relayWAMessage(prep)
               break
-       case 'anime':
-              let wipu = (await axios.get(`https://raw.githubusercontent.com/Arya-was/endak-tau/main/${command}.json`)).data
-              let wipi = wipu[Math.floor(Math.random() * (wipu.length))]
-              fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
-		buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `next`},type:1},{buttonId:`${prefix}owner`,buttonText:{displayText:'owner'},type:1}]
-              imageMsg = ( await bosco.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
-              buttonsMessage = {footerText:'© 𝐌𝐚𝐝𝐞 𝐁𝐲 𝐀𝐉𝐔𝐒𝐄𝐑', imageMessage: imageMsg,
-              contentText:`_Click Next to go to the next picture_`,buttons,headerType:4}
-              prep = await bosco.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
-              bosco.relayWAMessage(prep)
-              fs.unlinkSync(`./${sender}.jpeg`)
-              break
+	case "anime":
+        reply(mess.wait);
+        fetch(
+          "https://raw.githubusercontent.com/pajaar/grabbed-results/master/pajaar-2020-gambar-anime.txt"
+        )
+          .then((res) => res.text())
+          .then((body) => {
+            let tod = body.split("\n");
+            let pjr = tod[Math.floor(Math.random() * tod.length)];
+            imageToBase64(pjr)
+              .then((response) => {
+                media = Buffer.from(response, "base64");
+                xeon.sendMessage(from, media, image, {
+                  quoted: mek,
+                  caption: "Here",
+                });
+              })
+              .catch((error) => {
+                console.log(error);
+              });
+          });
+        break;
         case 'song':
         case 'play':
                if (args.length < 1) return reply('*What do you want to search?*')
