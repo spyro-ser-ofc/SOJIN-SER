@@ -2478,7 +2478,7 @@ teks = `
               imageMsg = ( await aju.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
               buttonsMessage = {footerText:'Dont forget to Subscribe AJUX', imageMessage: imageMsg,
               contentText:`Click Next to go to the next picture`,buttons,headerType:4}
-              prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
+              prep = await aju.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
               aju.relayWAMessage(prep)
               fs.unlinkSync(`./${sender}.jpeg`)
               break
