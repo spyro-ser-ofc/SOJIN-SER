@@ -2475,11 +2475,11 @@ teks = `
               let wipi = wipu[Math.floor(Math.random() * (wipu.length))]
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
 		      buttons = [{buttonId: `waifu`,buttonText:{displayText: `➡️Next`},type:1},{buttonId:`owner`,buttonText:{displayText:'☄️OWNER'},type:1}]
-              imageMsg = ( await aju.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
+              imageMsg = ( await bosco.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
               buttonsMessage = {footerText:'Dont forget to Subscribe AJUX', imageMessage: imageMsg,
               contentText:`Click Next to go to the next picture`,buttons,headerType:4}
-              prep = await aju.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
-              aju.relayWAMessage(prep)
+              prep = await bosco.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
+              bosco.relayWAMessage(prep)
               fs.unlinkSync(`./${sender}.jpeg`)
               break
         case 'song':
