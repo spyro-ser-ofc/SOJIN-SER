@@ -2465,7 +2465,7 @@ teks = `
               prep = await bosco.prepareMessageFromContent(from,{buttonsMessage},{})
               bosco.relayWAMessage(prep)
               break
-        case "anime":
+        case "anim":
         reply(mess.wait);
         fetch(
           "https://raw.githubusercontent.com/pajaar/grabbed-results/master/pajaar-2020-gambar-anime.txt"
@@ -2492,7 +2492,7 @@ teks = `
           case 'husbu':
           case 'milf':
           case 'cosplay':
-          case 'ajuz':
+          case 'wallml':
               let wipu = (await axios.get(`https://raw.githubusercontent.com/Arya-was/endak-tau/main/${command}.json`)).data
               let wipi = wipu[Math.floor(Math.random() * (wipu.length))]
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
