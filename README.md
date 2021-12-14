@@ -54,8 +54,8 @@ https://github.com/clhuang/heroku-buildpack-webp-binaries.git
 [`Click Here`](https://github.com/aju001/AJUX/blob/master/Aju.json#L1)
 
 ## `SETTINGS`
-- CHANGE OWNER NUMBER [Here](https://github.com/aju001/AJUX/blob/master/setting.json#L2,#L7)
-- CHANGE OWNER NAME [Here](https://github.com/aju001/AJUX/blob/master/setting.json#L5,#8)
+- CHANGE OWNER NUMBER [Here](https://github.com/aju001/AJUX/blob/master/setting.json#L2)
+- CHANGE OWNER NAME [Here](https://github.com/aju001/AJUX/blob/master/setting.json#L5)
 
 # Requirements
 * [Node.js](https://nodejs.org/en/)
