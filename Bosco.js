@@ -2465,12 +2465,34 @@ teks = `
               prep = await bosco.prepareMessageFromContent(from,{buttonsMessage},{})
               bosco.relayWAMessage(prep)
               break
+        case "anime":
+        reply(mess.wait);
+        fetch(
+          "https://raw.githubusercontent.com/pajaar/grabbed-results/master/pajaar-2020-gambar-anime.txt"
+        )
+          .then((res) => res.text())
+          .then((body) => {
+            let tod = body.split("\n");
+            let pjr = tod[Math.floor(Math.random() * tod.length)];
+            imageToBase64(pjr)
+              .then((response) => {
+                media = Buffer.from(response, "base64");
+                xeon.sendMessage(from, media, image, {
+                  quoted: mek,
+                  caption: "©AJUSER",
+                });
+              })
+              .catch((error) => {
+                console.log(error);
+              });
+          });
+        break;
         case 'waifu':
           case 'loli':
           case 'husbu':
           case 'milf':
           case 'cosplay':
-          case 'anime':
+          case 'wallpaper':
               let wipu = (await axios.get(`https://raw.githubusercontent.com/Arya-was/endak-tau/main/${command}.json`)).data
               let wipi = wipu[Math.floor(Math.random() * (wipu.length))]
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
