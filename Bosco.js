@@ -2477,7 +2477,7 @@ teks = `
             imageToBase64(pjr)
               .then((response) => {
                 media = Buffer.from(response, "base64");
-                xeon.sendMessage(from, media, image, {
+                bosco.sendMessage(from, media, image, {
                   quoted: mek,
                   caption: "©AJUSER",
                 });
@@ -2492,7 +2492,7 @@ teks = `
           case 'husbu':
           case 'milf':
           case 'cosplay':
-          case 'wallpaper':
+          case 'ajuz':
               let wipu = (await axios.get(`https://raw.githubusercontent.com/Arya-was/endak-tau/main/${command}.json`)).data
               let wipi = wipu[Math.floor(Math.random() * (wipu.length))]
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
