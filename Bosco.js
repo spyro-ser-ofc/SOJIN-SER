@@ -2465,16 +2465,21 @@ teks = `
               prep = await bosco.prepareMessageFromContent(from,{buttonsMessage},{})
               bosco.relayWAMessage(prep)
               break
-	case 'anime':
+        case 'waifu':
+          case 'loli':
+          case 'husbu':
+          case 'milf':
+          case 'cosplay':
+          case 'anime':
               let wipu = (await axios.get(`https://raw.githubusercontent.com/Arya-was/endak-tau/main/${command}.json`)).data
               let wipi = wipu[Math.floor(Math.random() * (wipu.length))]
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
-              buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `next`},type:1},{buttonId:`${prefix}owner`,buttonText:{displayText:'owner'},type:1}]
-              imageMsg = ( await bosco.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
-              buttonsMessage = {footerText:'©𝙈𝘼𝘿𝙀 𝘽𝙔 𝘼𝙅𝙐𝙎𝙀𝙍', imageMessage: imageMsg,
-              contentText:`_Click Next to go to the next picture_`,buttons,headerType:4}
-              prep = await bosco.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
-              bosco.relayWAMessage(prep)
+		      buttons = [{buttonId: `waifu`,buttonText:{displayText: `➡️Next`},type:1},{buttonId:`owner`,buttonText:{displayText:'☄️OWNER'},type:1}]
+              imageMsg = ( await aju.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
+              buttonsMessage = {footerText:'Dont forget to Subscribe AJUX', imageMessage: imageMsg,
+              contentText:`Click Next to go to the next picture`,buttons,headerType:4}
+              prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
+              aju.relayWAMessage(prep)
               fs.unlinkSync(`./${sender}.jpeg`)
               break
         case 'song':
