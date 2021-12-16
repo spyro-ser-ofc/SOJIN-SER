@@ -619,7 +619,7 @@ const ftrol = {
            if(mime.split("/")[0] === "audio"){
            mime = Mimetype.mp4Audio
 }
-           bosco.sendMessage(to, media, type, {quoted: mek, "externalAdReply": { "title": `${' '}Sᴜʙsᴄʀɪʙᴇ Yᴛ : AJUX${''}${''}`, "body": `Gʀᴏᴜᴘ Assɪsᴛᴇɴᴛ Bᴏᴛ`, "previewType": 'PHOTO', "thumbnailUrl": `${''}`, "thumbnail": denis, "sourceUrl": `${''}`}, mimetype: mime, caption: text, thumbnail: Buffer.alloc(0), contextInfo: {"mentionedJid": mids}})
+           bosco.sendMessage(to, media, type, {quoted: mek, "externalAdReply": { "title": `${' '}ɪᴛs ᴍᴇ ᴀᴊᴜsᴇʀ${''}${''}`, "body": `Gʀᴏᴜᴘ Assɪsᴛᴇɴᴛ Bᴏᴛ`, "previewType": 'PHOTO', "thumbnailUrl": `${''}`, "thumbnail": denis, "sourceUrl": `${''}`}, mimetype: mime, caption: text, thumbnail: Buffer.alloc(0), contextInfo: {"mentionedJid": mids}})
                      
            fs.unlinkSync(filename)
 });
@@ -1587,13 +1587,13 @@ break
                     encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 		            media = await bosco.downloadAndSaveMediaMessage(encmedia)
                     anu = args.join(' ').split('|')
-                    satu = anu[0] !== '' ? anu[0] : `Denis`
+                    satu = anu[0] !== '' ? anu[0] : `Aju`
                     dua = typeof anu[1] !== 'undefined' ? anu[1] : `BOT`
                     require('./lib/fetch.js').createExif(satu, dua)
 			        require('./lib/fetch.js').modStick(media, bosco, mek, from)
 			        break
              case 'fastvid':
-		            if (!isQuotedVideo) return fakeitem('Reply videonya!')
+		            if (!isQuotedVideo) return fakeitem('Videokk reply kodukk bro!')
 		            fakegroup(mess.wait)
 		            encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 		            media = await bosco.downloadAndSaveMediaMessage(encmedia)
@@ -1607,7 +1607,7 @@ break
 		            })
 		            break
 		    case 'slowvid':
-		            if (!isQuotedVideo) return fakeitem('Reply videonya!')
+		            if (!isQuotedVideo) return fakeitem('Videokk reply kodukk bro!')
 		            fakegroup(mess.wait)
 		            encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 		            media = await bosco.downloadAndSaveMediaMessage(encmedia)
@@ -1621,7 +1621,7 @@ break
 		            })
 		            break
 		    case 'reversevid':
-		            if (!isQuotedVideo) return fakeitem('```Reply videonya!```')
+		            if (!isQuotedVideo) return fakeitem('```Videokk reply kodukk bro!```')
 		            encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 		            media = await bosco.downloadAndSaveMediaMessage(encmedia)
 		            ran = getRandom('.mp4')
@@ -1634,7 +1634,7 @@ break
 		            })
 		            break
              case 'nightcore':
-	                 if (!isQuotedAudio) return reply('Reply audio nya om')
+	                 if (!isQuotedAudio) return reply('Audiokk replay kodukk bro')
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					media = await bosco.downloadAndSaveMediaMessage(encmedia)
 					ran = getRandom('.mp3')
@@ -1777,7 +1777,7 @@ break
 				     })
 				     break
       case 'tomp4':
-					if (!isQuotedSticker) return reply('Reply stiker nya')
+					if (!isQuotedSticker) return reply('Reply stiker bro')
                                         reply(mess.wait)
             if ((isMedia && !mek.message.videoMessage || isQuotedSticker) && args.length == 0) {
             ger = isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
@@ -1806,7 +1806,7 @@ break
 					break
       case 'kick':
 if (!isOwner && !isGroupAdmins) return reply('*Admin Group Only*')
-if (!isBotGroupAdmins) return reply('*Bot not admin!*')
+if (!isBotGroupAdmins) return reply('*Njan admin alla bro!*')
 if (!isGroup) return
 if (mek.message.extendedTextMessage === null || mek.message.extendedTextMessage === undefined) return;
 if (mek.message.extendedTextMessage.contextInfo.participant === undefined) {
@@ -1827,7 +1827,7 @@ bosco.groupRemove(from, [entah])
 break
 case 'add':
       if (!isOwner && !isGroupAdmins) return reply('*Admin Group Only*')
-if (!isBotGroupAdmins) return reply('*Bot not admin!*')
+if (!isBotGroupAdmins) return reply('*Njan admin alla bro!*')
 if (!isGroup) return
 if (mek.message.extendedTextMessage === null || mek.message.extendedTextMessage === undefined) return;
 if (mek.message.extendedTextMessage.contextInfo.participant === undefined) {
@@ -1848,7 +1848,7 @@ bosco.groupAdd(from, [entah])
 break
 case 'promote':
 if (!isGroupAdmins) return reply('*Admin Group Only*')
-if (!isBotGroupAdmins) return reply('*Bot not admin!*')
+if (!isBotGroupAdmins) return reply('*Njan admin alla bro!!*')
 if (!isGroup) return
 if (mek.message.extendedTextMessage === null || mek.message.extendedTextMessage === undefined) return;
 if (mek.message.extendedTextMessage.contextInfo.participant === undefined) {
@@ -1869,7 +1869,7 @@ bosco.groupMakeAdmin(from, [entah])
 break
 case 'demote':
       if (!isOwner && !isGroupAdmins) return reply('*Admin Group Only*')
-if (!isBotGroupAdmins) return reply('*Bot not admin!*')
+if (!isBotGroupAdmins) return reply('* Njan admin alla bro!*')
 if (!isGroup) return
 if (mek.message.extendedTextMessage === null || mek.message.extendedTextMessage === undefined) return;
 if (mek.message.extendedTextMessage.contextInfo.participant === undefined) {
@@ -1891,7 +1891,7 @@ break
       case 'bc':
 					bosco.updatePresence(from, Presence.composing)
 					if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
-					if (args.length < 1) return reply('*Where is Text?*')
+					if (args.length < 1) return reply('*Text avide?*')
 					anu = await bosco.chats.all()
 					if (isMedia && !mek.message.videoMessage || isQuotedImage) {
 					     encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
@@ -1972,7 +1972,7 @@ break
                         break
       case 'toimg':
       case 'photo':
-              if (!isQuotedSticker) return reply('*Reply To Sticker*')
+              if (!isQuotedSticker) return reply('*Stickernu Reply kodukk bro*')
               encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
               media = await bosco.downloadAndSaveMediaMessage(encmedia)
               ran = getRandom('.png')
@@ -1980,7 +1980,7 @@ break
               fs.unlinkSync(media)
               if (err) return reply('*Failed, when converting sticker to image*')
               buffer = fs.readFileSync(ran)
-              bosco.sendMessage(from, buffer, image, {quoted: mek, thumbnail:denis, caption: '𝘽𝙔 𝘼𝙅𝙐𝙎𝙀𝙍 𝘽𝙊𝙏'})
+              bosco.sendMessage(from, buffer, image, {quoted: mek, thumbnail:denis, caption: '©𝘽𝙔 𝘼𝙅𝙐𝙎𝙀𝙍 𝘽𝙊𝙏'})
               fs.unlinkSync(ran)
 })
               break
@@ -2050,7 +2050,7 @@ break
                break
        case 'pinterest':
          case 'pin':
-              if (args.length < 1) return reply(`${prefix}Denis Ser`)
+              if (args.length < 1) return reply(`${prefix}Aju Ser`)
               data = await fetchJson(`https://lolhuman.herokuapp.com/api/pinterest?apikey=${lolkey}&query=${q}`)
               buttons = [{buttonId: `${prefix + command} ${q}`,buttonText:{displayText: `➡️Next`},type:1}]
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(data.result))
@@ -2203,7 +2203,7 @@ ${repo.open_issues} Issue${repo.description ? `
       case 'ttaudio': 
       case 'tiktokmusic': 
       case 'tiktokaudio':
-             if (args.length == 0) return reply(`Example: ${prefix + command} https://vt.tiktok.com/ZSwWCk5o/`)
+             if (args.length == 0) return reply(`Example: ${prefix + command} https://vt.tiktok.com/ZSwk5o/`)
              ini_link = args[0]
              get_audio = await getBuffer(`https://api.lolhuman.xyz/api/tiktokmusic?apikey=${lolkey}&url=${ini_link}`)
              bosco.sendMessage(from, get_audio, audio, { mimetype: Mimetype.mp4Audio, quoted: mek })
@@ -2283,7 +2283,7 @@ ${repo.open_issues} Issue${repo.description ? `
                break
       case 'playstore':
               try {
-              if (args.length == 0) return reply(`Send orders *${prefix}playstore [ apk ]*\nExample : ${prefix}playstore pubg`)
+              if (args.length == 0) return reply(`Send orders *${prefix}playstore [ apk ]*\nExample : ${prefix}playstore Bgmi`)
               query = args.join(" ")
               reply(mess.wait)
               get_result = await fetchJson(`https://api.zeks.xyz/api/sgplay?apikey=${zekskey}&q=${query}`)
@@ -2466,6 +2466,7 @@ teks = `
               bosco.relayWAMessage(prep)
               break
         case "anim":
+       case "anime":
         reply(mess.wait);
         fetch(
           "https://raw.githubusercontent.com/pajaar/grabbed-results/master/pajaar-2020-gambar-anime.txt"
@@ -2746,9 +2747,9 @@ case 'emoji':
 //------------------< Storage >-------------------
 
              case 'addvid':
-					if (!isQuotedVideo) return reply('```Reply vidionya```')
+					if (!isQuotedVideo) return reply('```Videokk Reply chy bro```')
 					nm = body.slice(8)
-					if (!nm) return reply('```Nama vidionya apa```')
+					if (!nm) return reply('```Vidiode Name ntha bro```')
 					boij = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 					delb = await bosco.downloadMediaMessage(boij)
 					videonye.push(`${nm}`)
@@ -2766,9 +2767,9 @@ case 'emoji':
 					break
       case 'addvn':
       case 'addbgm':
-					if (!isQuotedAudio) return reply('*Reply to Audio*')
+					if (!isQuotedAudio) return reply('*Audiokk Reply chyy*')
 					nm = body.slice(7)
-					if (!nm) return reply('*What is The bgm name?*')
+					if (!nm) return reply('*Bgm name ntha?*')
 					boij = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 					delb = await bosco.downloadMediaMessage(boij)
 					vien.push(`${nm}`)
@@ -2815,7 +2816,7 @@ case 'emoji':
 					 wanu = imagi.indexOf(nmm)
 					 imagi.splice(wanu, 1)
 					 fs.unlinkSync(`./media/image/${nmm}.jpg`)
-					 costum(from, 'Image Deleted', fake)
+					 costum(from, 'Image Delete akki', fake)
 					} catch (err){
 						console.log(err)
 						reply(mess.error.api)
@@ -2833,7 +2834,7 @@ case 'emoji':
               case 'addsticker':
 					if (!isQuotedSticker) return reply('*Reply To Sticker*')
 					nm = body.slice(12)
-					if (!nm) return reply('*Sticker Name?*')
+					if (!nm) return reply('*Sticker Name ntha?*')
 					boij = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 					delb = await bosco.downloadMediaMessage(boij)
 					setik.push(`${nm}`)
@@ -2847,7 +2848,7 @@ case 'emoji':
 					 wanu = setik.indexOf(nmm)
 					 setik.splice(wanu, 1)
 					 fs.unlinkSync(`./media/sticker/${nmm}.webp`)
-					 costum(from, '*Sticker Deleted*', fake)
+					 costum(from, '*Sticker Delete akki*', fake)
 					} catch (err){
 						console.log(err)
 						reply(mess.error.api)
@@ -3236,20 +3237,20 @@ if (Number(oi2) >= 50) return reply('*Most!*')
                 reply('*The bot has been successfully muted in this chat*')
                 break
      case 'tts':
-					if (args.length < 1) return bosco.sendMessage(from, `Kode bahasanya mana kak? contoh : ${prefix}tts id yamate kudasai`, text, { quoted: mek })
+					if (args.length < 1) return bosco.sendMessage(from, `Where's the language cod ? contoh : ${prefix}tts ml ajuser uyir`, text, { quoted: mek })
 				   const gtts = require('./lib/gtts')(args[0])
-					if (args.length < 2) return bosco.sendMessage(from, `Teksnya mana kak? contoh : ${prefix}tts id yamate kudasai`, text, { quoted: mek })
+					if (args.length < 2) return bosco.sendMessage(from, `Where's the Texk bro? contoh : ${prefix}tts ml ajuser uyir`, text, { quoted: mek })
 					var bby = body.slice(8)
 					ranm = getRandom('.mp3')
 					rano = getRandom('.ogg')
 					bby.length > 300
-						? reply('Teks nya terlalu panjang kak')
+						? reply('The text is too long')
 						: gtts.save(ranm, bby, function () {
 							exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
 								fs.unlinkSync(ranm)
 								buff = fs.readFileSync(rano)
 								if (err) return reply(dla.stikga())
-								bosco.sendMessage(from, buff, audio, { duration: 9989.0, ptt: true, quoted: mek })
+								bosco.sendMessage(from, buff, audio, { duration: 998989.0, ptt: true, quoted: mek })
 								fs.unlinkSync(rano)
 							})
 						})
@@ -3282,7 +3283,7 @@ if (Number(oi2) >= 50) return reply('*Most!*')
          if (!isGroupAdmins) return reply(mess.only.admin)
           json = ['action', 'inviteReset', from]
          bosco.query({json, expect200: true})
-          reply('*Succes Reset Group Link*')
+          reply('*Group Link reset akki*')
          break
      case 'tagme':
                   var nomqm = mek.participant
