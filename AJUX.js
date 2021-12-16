@@ -2157,7 +2157,7 @@ ${repo.open_issues} Issue${repo.description ? `
       case 'ytmp3':
       case 'ytmp4':
       case 'video':
-             if (args.length < 1) return reply('*Where is the link?*')
+             if (args.length < 1) return reply('*Where is the link??*')
              if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
              teks = args.join(' ')
              res = await y2mateA(teks).catch(e => {
