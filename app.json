@@ -1,7 +1,8 @@
 {
   "name": "whatsapp-bot",
-  "description": "AJUSER bot build with nodejs",
-  "repository": "https://github.com/aju001/AJUX",
-  "logo": "https://i.ibb.co/kQ98t1k/AJU.jpg",
+  "description": "SOJIN SER bot build with nodejs",
+  "repository": "https://github.com/sojin103/SOJIN-SER",
+  "logo": "https://i.imgur.com/Iy4oFBu.jpeg",
   "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation"],
 }
+                     
