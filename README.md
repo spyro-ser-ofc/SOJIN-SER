@@ -3,12 +3,12 @@
 
 
 <div align="center">
-<a href="https://github.com/aju001"><img src="life.jpg" alt="Aju"width="500" />
+<a href="https://github.com/sojin103"><img src="life.jpg" alt="Sojin"width="500" />
  
-## ⚡AJUSER⚡
+## ⚡SOJIN SER⚡
 
 
-> Ajuser Bot is a multipurpose WhatsApp bot using Adiwajshing-Baileys library!
+> Sojin ser Bot is a multipurpose WhatsApp bot using Adiwajshing-Baileys library!
 >
 >
 
@@ -22,16 +22,16 @@
 
 
 <p align="center">
- <a href="https://github.com/aju001"><img title="Author" src="https://img.shields.io/badge/Author-Aju-blue.svg?style=for-the-badge&logo=github" /></a>  <a href="https://Wa.me/+917994873071?text=Hello%20Aju%20Bro🌝...fen%20boi%20aan😌💝"><img title="Author" src="https://img.shields.io/badge/Owner-Aju-blue.svg?style=for-the-badge&logo=whatsapp" /></a>
+ <a href="https://github.com/sojin103"><img title="Author" src="https://img.shields.io/badge/Author-Soju-blue.svg?style=for-the-badge&logo=github" /></a>  <a href="https://Wa.me/+917034892898?text=Hello%20Soju%20Bro🌝...fen%20boi%20aan😌💝"><img title="Author" src="https://img.shields.io/badge/Owner-Sojin-blue.svg?style=for-the-badge&logo=whatsapp" /></a>
 <p align="center">
 <a href="https://chat.whatsapp.com/HebsCx7CBxMJBLqyeHemcO"><img title="Author" src="https://img.shields.io/badge/Watsapp-Group-blue.svg?style=for-the-badge&logo=whatsapp" /></a> <a href="https://youtube.com/channel/UCk4uZXPnYwPSo2YlQECp1RA"><img title="Author" src="https://img.shields.io/badge/Youtube-AJUX-blue.svg?style=for-the-badge&logo=youtube" /></a>
 </p>
 
 
 <p align="center">
-  <a href="https://github.com/aju001/AJUX#requirements">Requirements</a> •
-  <a href="https://github.com/aju001/AJUX#simple method">Installation</a> •
-  <a href="https://github.com/aju001/AJUX#thanks-to">Thanks to AJU</a> 
+  <a href="https://github.com/sojin103/SOJIN-SER#requirements">Requirements</a> •
+  <a href="https://github.com/sojin103/SOJIN-SER#simple method">Installation</a> •
+  <a href="https://github.com/sojin103/SOJIN-SER#thanks-to">Thanks to Soju</a> 
 </p>
 </div>
 
